@@ -16,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let newFriend = BaldEagle(name: "Phil", species: "Bird", imageURL: nil, zoo: Zoo(name: "Bronx Zoo", location: "In the bronx", animals: []))
-        
-        newFriend.eat()
+      
         
         // Override point for customization after application launch.
         return true

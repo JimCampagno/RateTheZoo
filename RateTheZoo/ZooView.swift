@@ -49,6 +49,5 @@ class ZooView: UIView {
         numberOfAnimalsLabel.text = "\(zoo.numberOfAnimals) number of animals"
         numberOfSpeciesLabel.text = "\(zoo.numberOfSpecies) number of species"
     }
-        
-    
+
 }

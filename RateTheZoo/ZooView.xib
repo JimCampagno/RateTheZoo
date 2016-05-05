@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZooView" customModule="RateTheZoo" customModuleProvider="target">
@@ -96,8 +97,18 @@
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7e-pd-uRR" userLabel="AnimalView">
                     <rect key="frame" x="0.0" y="217" width="472" height="70"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbJ-fb-gMD">
+                            <rect key="frame" x="0.0" y="0.0" width="472" height="70"/>
+                        </scrollView>
+                    </subviews>
                     <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="sbJ-fb-gMD" firstAttribute="width" secondItem="I7e-pd-uRR" secondAttribute="width" id="AP5-sf-VeN"/>
+                        <constraint firstAttribute="trailing" secondItem="sbJ-fb-gMD" secondAttribute="trailing" id="Tso-pe-bOY"/>
+                        <constraint firstItem="sbJ-fb-gMD" firstAttribute="leading" secondItem="I7e-pd-uRR" secondAttribute="leading" id="YFd-PB-krR"/>
+                        <constraint firstItem="sbJ-fb-gMD" firstAttribute="top" secondItem="I7e-pd-uRR" secondAttribute="top" id="cxI-Zs-vL9"/>
+                        <constraint firstAttribute="bottom" secondItem="sbJ-fb-gMD" secondAttribute="bottom" id="hc9-v9-HUP"/>
                         <constraint firstAttribute="height" constant="70" id="myh-6L-FBG"/>
                     </constraints>
                 </view>
@@ -111,9 +122,10 @@
                 <constraint firstItem="CCx-te-770" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="clU-Jr-Zv1"/>
                 <constraint firstItem="CCx-te-770" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dt9-p0-jBo"/>
                 <constraint firstItem="CCx-te-770" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qCZ-gb-e7G"/>
+                <constraint firstItem="sbJ-fb-gMD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1.5" id="zz7-kZ-6G8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="401" y="177.5"/>
+            <point key="canvasLocation" x="402" y="162.5"/>
         </view>
     </objects>
     <resources>
