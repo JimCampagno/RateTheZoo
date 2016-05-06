@@ -15,6 +15,7 @@
 		7DD293971CD97D3000016C9F /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD293961CD97D3000016C9F /* Zoo.swift */; };
 		7DD2939D1CD986F800016C9F /* ZooView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DD2939C1CD986F800016C9F /* ZooView.xib */; };
 		7DD2939F1CD98F5800016C9F /* ZooView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD2939E1CD98F5800016C9F /* ZooView.swift */; };
+		7DD293A11CDC2E1F00016C9F /* ZooAnimalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DD293A01CDC2E1F00016C9F /* ZooAnimalView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7DD293961CD97D3000016C9F /* Zoo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
 		7DD2939C1CD986F800016C9F /* ZooView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZooView.xib; sourceTree = "<group>"; };
 		7DD2939E1CD98F5800016C9F /* ZooView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZooView.swift; sourceTree = "<group>"; };
+		7DD293A01CDC2E1F00016C9F /* ZooAnimalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZooAnimalView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				7DD293881CD97CDB00016C9F /* Main.storyboard */,
 				7DD2939C1CD986F800016C9F /* ZooView.xib */,
 				7DD2939E1CD98F5800016C9F /* ZooView.swift */,
+				7DD293A01CDC2E1F00016C9F /* ZooAnimalView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				7DD2938F1CD97CDB00016C9F /* LaunchScreen.storyboard in Resources */,
 				7DD2938C1CD97CDB00016C9F /* Assets.xcassets in Resources */,
+				7DD293A11CDC2E1F00016C9F /* ZooAnimalView.xib in Resources */,
 				7DD2938A1CD97CDB00016C9F /* Main.storyboard in Resources */,
 				7DD2939D1CD986F800016C9F /* ZooView.xib in Resources */,
 			);
