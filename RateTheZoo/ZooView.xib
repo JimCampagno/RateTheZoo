@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,14 +25,14 @@
                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CCx-te-770">
                     <rect key="frame" x="0.0" y="0.0" width="472" height="217"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bronz_Zoo" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-1x-Jbl">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="217"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bronz_Zoo" translatesAutoresizingMaskIntoConstraints="NO" id="ybL-1x-Jbl">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="217"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="wqz-uY-ehA"/>
                             </constraints>
                         </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WqZ-Jq-WoP">
-                            <rect key="frame" x="108" y="0.0" width="364" height="217"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WqZ-Jq-WoP">
+                            <rect key="frame" x="292" y="0.0" width="180" height="217"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qep-8h-BH5">
                                     <rect key="frame" x="0.0" y="0.0" width="165" height="54"/>
@@ -61,7 +61,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxO-Cz-292">
-                                    <rect key="frame" x="0.0" y="98" width="195" height="28"/>
+                                    <rect key="frame" x="0.0" y="98" width="180" height="28"/>
                                     <attributedString key="attributedText">
                                         <fragment content="4,000 number of animals">
                                             <attributes>

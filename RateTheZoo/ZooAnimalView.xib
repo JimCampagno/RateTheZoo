@@ -1,40 +1,145 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZooAnimalView" customModule="RateTheZoo" customModuleProvider="target">
+            <connections>
+                <outlet property="blurredZooView" destination="rIc-ut-0Xg" id="G8W-oh-PA1"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="9EK-JK-nGN"/>
+                <outlet property="image0" destination="L5z-cj-5kd" id="f2N-FG-vJ7"/>
+                <outlet property="image1" destination="A9F-ft-66W" id="mct-DM-o1E"/>
+                <outlet property="image2" destination="NFz-1E-cmF" id="5qN-fW-e8e"/>
+                <outlet property="image3" destination="hh8-6V-BCQ" id="6oW-qN-Iip"/>
+                <outlet property="image4" destination="DB3-wo-Qr9" id="8Ck-ou-aFA"/>
+                <outlet property="image5" destination="HoD-St-jXl" id="45d-Cb-Ko8"/>
+                <outlet property="zooLabel" destination="uMx-gS-uLE" id="jAc-Oh-jk9"/>
+                <outlet property="zooView" destination="omo-Zy-NSz" id="uV9-Hn-iIl"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-VZ-cmo">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="oSe-AV-fXW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bronz_Zoo" translatesAutoresizingMaskIntoConstraints="NO" id="rIc-ut-0Xg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-yG-TpZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wJW-tC-29Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zre-rB-IvR">
-                                <rect key="frame" x="8" y="8" width="240" height="128"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dpr-Hl-Kef">
+                                <rect key="frame" x="-13" y="52" width="401" height="212"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bronz_Zoo" translatesAutoresizingMaskIntoConstraints="NO" id="omo-Zy-NSz">
+                                        <rect key="frame" x="0.0" y="0.0" width="401" height="157"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="157" id="G8S-UJ-RLH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-gS-uLE">
+                                        <rect key="frame" x="130" y="171" width="141" height="41"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Bronx Zoo">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zre-rB-IvR" secondAttribute="bottom" id="Fvi-0I-i2j"/>
-                            <constraint firstAttribute="trailing" secondItem="zre-rB-IvR" secondAttribute="trailing" id="e72-9X-b1U"/>
-                            <constraint firstItem="zre-rB-IvR" firstAttribute="top" secondItem="oSe-AV-fXW" secondAttribute="top" id="gfE-JH-2Xq"/>
-                            <constraint firstItem="zre-rB-IvR" firstAttribute="leading" secondItem="oSe-AV-fXW" secondAttribute="leading" id="sfN-Xo-bcJ"/>
+                            <constraint firstItem="omo-Zy-NSz" firstAttribute="leading" secondItem="wJW-tC-29Z" secondAttribute="leading" constant="-13" id="FId-V3-kc2"/>
                         </constraints>
                     </view>
+                    <constraints>
+                        <constraint firstItem="dpr-Hl-Kef" firstAttribute="centerX" secondItem="Xah-yG-TpZ" secondAttribute="centerX" id="Zu0-y9-buD"/>
+                        <constraint firstItem="dpr-Hl-Kef" firstAttribute="centerY" secondItem="Xah-yG-TpZ" secondAttribute="centerY" id="toL-iT-rKy"/>
+                    </constraints>
                     <blurEffect style="light"/>
                 </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBN-qF-hKk">
+                    <rect key="frame" x="172" y="285" width="30" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="🐢"/>
+                    <connections>
+                        <action selector="turtleButton:" destination="-1" eventType="touchUpInside" id="Skh-KR-tb6"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-Va-5aS">
+                    <rect key="frame" x="4" y="341" width="367" height="334"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kia-S3-oW8">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="334"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="L5z-cj-5kd">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="109"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey2" translatesAutoresizingMaskIntoConstraints="NO" id="NFz-1E-cmF">
+                                    <rect key="frame" x="0.0" y="113" width="182" height="109"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="DB3-wo-Qr9">
+                                    <rect key="frame" x="0.0" y="226" width="182" height="109"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ppq-3l-XEr">
+                            <rect key="frame" x="186" y="0.0" width="182" height="334"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey1" translatesAutoresizingMaskIntoConstraints="NO" id="A9F-ft-66W">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="109"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiger" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-6V-BCQ">
+                                    <rect key="frame" x="0.0" y="113" width="182" height="109"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebraWannabe" translatesAutoresizingMaskIntoConstraints="NO" id="HoD-St-jXl">
+                                    <rect key="frame" x="0.0" y="226" width="182" height="109"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+            <constraints>
+                <constraint firstItem="Xah-yG-TpZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1IN-IQ-qTz"/>
+                <constraint firstItem="6Y7-Va-5aS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="3Sl-wQ-V2m"/>
+                <constraint firstItem="rIc-ut-0Xg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7J2-Ja-GS8"/>
+                <constraint firstItem="ZBN-qF-hKk" firstAttribute="top" secondItem="Xah-yG-TpZ" secondAttribute="bottom" constant="8" id="81p-Jb-TQh"/>
+                <constraint firstItem="6Y7-Va-5aS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="Al4-n1-7nL"/>
+                <constraint firstItem="ZBN-qF-hKk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tat-QB-IUc"/>
+                <constraint firstAttribute="bottom" secondItem="6Y7-Va-5aS" secondAttribute="bottom" constant="8" id="aIZ-am-yYI"/>
+                <constraint firstItem="rIc-ut-0Xg" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="eYz-bb-NDM"/>
+                <constraint firstItem="Xah-yG-TpZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gGt-Gu-Wxn"/>
+                <constraint firstItem="rIc-ut-0Xg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hLD-fW-j3f"/>
+                <constraint firstItem="Xah-yG-TpZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" constant="10" id="iSK-5w-Vcj"/>
+                <constraint firstAttribute="trailing" secondItem="Xah-yG-TpZ" secondAttribute="trailing" id="pTX-fi-xnq"/>
+                <constraint firstAttribute="trailing" secondItem="6Y7-Va-5aS" secondAttribute="trailing" constant="4" id="v5r-7L-uv8"/>
+                <constraint firstAttribute="trailing" secondItem="rIc-ut-0Xg" secondAttribute="trailing" id="yVX-o4-Feb"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="281.5" y="389.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Bronz_Zoo" width="2556" height="1896"/>
+        <image name="lion" width="337" height="336"/>
+        <image name="monkey1" width="337" height="337"/>
+        <image name="monkey2" width="334" height="337"/>
+        <image name="tiger" width="334" height="334"/>
+        <image name="zebra" width="336" height="338"/>
+        <image name="zebraWannabe" width="334" height="337"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BEF10DB1CDD3A4A00E611B1 /* ZooAnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF10DA1CDD3A4A00E611B1 /* ZooAnimalView.swift */; };
 		7DD293851CD97CDB00016C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD293841CD97CDB00016C9F /* AppDelegate.swift */; };
 		7DD293871CD97CDB00016C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD293861CD97CDB00016C9F /* ViewController.swift */; };
 		7DD2938A1CD97CDB00016C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD293881CD97CDB00016C9F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5BEF10DA1CDD3A4A00E611B1 /* ZooAnimalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZooAnimalView.swift; sourceTree = "<group>"; };
 		7DD293811CD97CDB00016C9F /* RateTheZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateTheZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD293841CD97CDB00016C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DD293861CD97CDB00016C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				7DD2939C1CD986F800016C9F /* ZooView.xib */,
 				7DD2939E1CD98F5800016C9F /* ZooView.swift */,
 				7DD293A01CDC2E1F00016C9F /* ZooAnimalView.xib */,
+				5BEF10DA1CDD3A4A00E611B1 /* ZooAnimalView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					7DD293801CD97CDB00016C9F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3E2QGNXM7N;
 					};
 				};
 			};
@@ -182,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD293871CD97CDB00016C9F /* ViewController.swift in Sources */,
+				5BEF10DB1CDD3A4A00E611B1 /* ZooAnimalView.swift in Sources */,
 				7DD293851CD97CDB00016C9F /* AppDelegate.swift in Sources */,
 				7DD293971CD97D3000016C9F /* Zoo.swift in Sources */,
 				7DD2939F1CD98F5800016C9F /* ZooView.swift in Sources */,
@@ -299,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RateTheZoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamesmith.RateTheZoo.RateTheZoo;
@@ -310,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RateTheZoo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gamesmith.RateTheZoo.RateTheZoo;
